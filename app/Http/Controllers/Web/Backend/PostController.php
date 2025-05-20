@@ -82,9 +82,7 @@ class PostController extends Controller
         return view("backend.layouts.post.index");
     }
 
-    /**
-     * Show the form for creating a new resource.
-     */
+
     public function create()
     {
         $categories = Category::where('status', 'active')->get();
